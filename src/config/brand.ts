@@ -104,5 +104,5 @@ export const copy = {
   brand: 'LUXURY PRIME',
   tagline: 'Elevate the Everyday.',
   /** Set to e.g. 'luxuryprime.ae' to show it under the tagline. Empty = hidden. */
-  website: '',
+  website: 'luxuryprime.ae',
 };

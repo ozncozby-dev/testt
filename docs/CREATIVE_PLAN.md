@@ -12,6 +12,7 @@
 | Source | Finding |
 |---|---|
 | Repository | Empty. No product photography, logo, colour references or audio were supplied. |
+| luxuryprime.ae | The brand has confirmed this site as the source for Primera images. This sandbox's network policy blocks it (`luxuryprime.ae`, and probably its image CDN), so allow those domains in the environment's network settings and the images can be pulled into the asset slots below. |
 | Google Drive | The only candidates are unlabelled JPGs in a folder called `WhatsApp Images` (e.g. `IMG-20260523-WA0005.jpg`, around 120 KB each). WhatsApp compresses images, so even if these are Primera shots they are too small for a 4K master. The render sandbox also can't reach Google Drive, so they could not be inspected. |
 
 **Decision.** The film is built on an **asset-slot architecture**:
@@ -103,5 +104,5 @@ For delivery, drop a licensed or commissioned score at `public/audio/soundtrack.
 1. Supply the assets listed in §1. Every slot is plug-and-play.
 2. Confirm the Primera finish names and colours (the current ones are placeholders: Onyx, Sage, Granite, Ivory).
 3. Confirm the 7 pc and 9 pc contents (the placeholder 9 pc adds a 28 cm frypan and a 26 cm sauté).
-4. Provide the website URL, if it should appear on the end card (`copy.website`).
+4. The website (`luxuryprime.ae`) is shown on the end card. Set `copy.website` to `''` to hide it.
 5. Choose a licensed typeface if brand guidelines require one (swap the files in `public/fonts`).
