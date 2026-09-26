@@ -1,0 +1,30 @@
+{
+  "name": "luxury-prime-primera-film",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LUXURY PRIME — Primera Cookware Collection brand film (Remotion)",
+  "scripts": {
+    "studio": "npm run audio && remotion studio",
+    "audio": "node scripts/generate-soundtrack.mjs",
+    "cues": "node scripts/generate-soundtrack.mjs --print",
+    "render": "npm run audio && remotion render LuxuryPrimeFilm out/luxury-prime-primera-4k.mp4",
+    "render:preview": "npm run audio && remotion render LuxuryPrimeFilm out/luxury-prime-primera-540p.mp4 --scale=0.25",
+    "render:1080": "npm run audio && remotion render LuxuryPrimeFilm out/luxury-prime-primera-1080p.mp4 --scale=0.5",
+    "stills": "node scripts/render-stills.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.529",
+    "@remotion/transitions": "4.0.529",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.529"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "^4.0.529",
+    "@remotion/renderer": "^4.0.529",
+    "@types/react": "18.3.12",
+    "esbuild": "^0.28.1",
+    "typescript": "5.6.3"
+  }
+}
