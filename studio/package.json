@@ -1,0 +1,20 @@
+{
+  "name": "seekt-motion-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "HTML motion design studio: seek(t) scenes, closed-form springs, deterministic render, critique loop",
+  "scripts": {
+    "preview": "node tools/preview.mjs",
+    "new": "node tools/new-scene.mjs",
+    "verify": "node tools/verify.mjs",
+    "critique": "node tools/critique.mjs",
+    "render": "node tools/render.mjs",
+    "render:draft": "node tools/render.mjs --draft",
+    "test": "node --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "playwright": "1.56.1"
+  }
+}

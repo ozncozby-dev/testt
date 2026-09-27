@@ -1,0 +1,23 @@
+/* base.css — shared page chrome for every scene. Scene styles live in the scene. */
+@font-face { font-family: 'Inter'; font-weight: 200; src: url('../assets/fonts/inter-latin-200-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 300; src: url('../assets/fonts/inter-latin-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 400; src: url('../assets/fonts/inter-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 500; src: url('../assets/fonts/inter-latin-500-normal.woff2') format('woff2'); }
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+/* Seek(t) rule: nothing may animate on its own. Kill CSS motion globally. */
+#stage, #stage * { transition: none !important; animation: none !important; }
+
+.is-render body { background: #000; overflow: hidden; }
+.is-preview body {
+  background: #111; color: #ddd; min-height: 100vh;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;
+  font: 13px/1.4 system-ui, sans-serif;
+}
+.is-preview .viewport { box-shadow: 0 0 0 1px #333; }
+.transport { display: flex; align-items: center; gap: 12px; width: min(960px, calc(100vw - 32px)); }
+.transport input { flex: 1; }
+.transport button { background: #222; color: #eee; border: 1px solid #444; border-radius: 4px; padding: 4px 12px; cursor: pointer; }
+.transport .tc { font-family: ui-monospace, monospace; min-width: 130px; text-align: right; }

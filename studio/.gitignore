@@ -1,0 +1,4 @@
+node_modules/
+out/
+# individual critique stills are regenerable; keep sheet.png + critique.md as the record
+critique/**/f*.png
